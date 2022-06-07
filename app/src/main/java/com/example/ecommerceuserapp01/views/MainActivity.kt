@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
                 || super.onSupportNavigateUp()
     }
 
-    //so we can log out by oNdestroy() or oNStop()
+    //so we can log out by onDestroy() or onStop()
     override fun onStop() {
         super.onStop()
         //So I have to check one thing that user is loged or not

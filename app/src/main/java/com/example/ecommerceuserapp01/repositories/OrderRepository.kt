@@ -1,5 +1,6 @@
 package com.example.ecommerceuserapp01.repositories
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.example.ecommerceuserapp01.models.Order
@@ -36,7 +37,9 @@ class OrderRepository {
                 for(doc in value!!.documents){
                    doc.toObject(Order::class.java)?.let{tempList.add(it)}
                 }
+
                 orderLD.value =tempList
+
             }
         return orderLD
     }
