@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="cartItem"
+            type="com.example.ecommerceuserapp01.models.CartItem" />
+
+        <variable
+            name="quantity"
+            type="Integer" />
+        <variable
+            name="price"
+            type="Double" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="5dp"
+        android:padding="5dp"
+        android:layout_margin="5dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/shop_logo_iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:src="@drawable/company_logo"
+                android:layout_margin="10dp" />
+
+            <TextView
+                android:id="@+id/shop_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Belleza Store"
+                app:layout_constraintStart_toEndOf="@id/shop_logo_iv"
+                app:layout_constraintTop_toTopOf="@id/shop_logo_iv"
+                app:layout_constraintBottom_toBottomOf="@id/shop_logo_iv"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:textColor="@color/black"
+
+                />
+
+            <View
+                android:id="@+id/shop_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shop_logo_iv"
+                android:layout_marginTop="15dp"
+                android:background="#BCB7B7" />
+
+            <ImageView
+                android:id="@+id/item_iv"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/shop_view"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/shirt_iv"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/item_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/item_iv"
+                app:layout_constraintTop_toTopOf="@id/item_iv"
+                tools:text="Full Slieve Oxford Cotton Shirt For Men"
+                android:text="@{cartItem.productName}"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/item_price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/item_name_tv"
+                app:layout_constraintTop_toBottomOf="@id/item_name_tv"
+                tools:text="BDT 199"
+                android:text="@{``+price}"
+                android:textStyle="normal"
+                android:textSize="12sp"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff22" />
+
+            <TextView
+                android:id="@+id/item_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/item_price_tv"
+                app:layout_constraintTop_toBottomOf="@id/item_price_tv"
+                tools:text="Size L"
+                android:text="@string/item_size" />
+
+            <ImageView
+                android:id="@+id/remove_cart_item_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/item_name_tv"
+                android:src="@drawable/delete_btn"
+                android:layout_marginRight="5dp" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/remove_cart_item_iv"
+                android:background="#F8F8F8"
+                android:backgroundTint="@color/purple_200">
+
+                <ImageView
+                    android:id="@+id/minus_item_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:src="@drawable/minus"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:id="@+id/item_count_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toEndOf="@id/minus_item_iv"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/add_item_iv"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    tools:text="2"
+                    android:text="@{``+quantity}"
+                    />
+
+                <ImageView
+                    android:id="@+id/add_item_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/item_count_tv"
+                    app:layout_constraintBottom_toBottomOf="@id/item_count_tv"
+                    android:src="@drawable/ic_baseline_add_24"
+                    android:layout_marginRight="10dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

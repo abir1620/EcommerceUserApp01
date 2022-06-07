@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">EcommerceUserApp01</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registration_level_text">Registration</string>
+    <string name="registration_btn_text">Registration</string>
+    <string name="login_level_text">Login</string>
+    <string name="login_btn_text">Login</string>
+    <string name="login_btn_by_google_text">Sign in with Google</string>
+    <string name="login_btn_by_facebook_text">Continue with Facebook</string>
+    <string name="forgot_password_text">Forgot Password?</string>
+    <string name="new_account_create_text">Create New Account</string>
+    <string name="shopping_cart_title_text">Shopping Cart</string>
+    <string name="cart_total_item_text"> 3 Piece</string>
+    <string name="item_name_text">Full Slive Oxford Cotton Shirt For Men</string>
+    <string name="item_price_text">BDT 199</string>
+    <string name="item_size">Size L</string>
+    <string name="checkout_tv_text">checkout</string>
+    <string name="total_tv_text">Total</string>
+    <string name="payment_method_text">Select Payment Method</string>
+    <string name="online_payment_text">Online Payment</string>
+    <string name="next_button_text">Next</string>
+    <string name="cash_on_delivery_text">Cash on Delivery</string>
+</resources>

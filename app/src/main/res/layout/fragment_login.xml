@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+      <variable
+          name="user"
+          type="com.example.ecommerceuserapp01.models.EcomUser" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        tools:context=".views.LoginFragment">
+
+        <ImageView
+            android:id="@+id/ajker_deal_logo_iv"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/ajker_deal_logo" />
+
+        <TextView
+            android:id="@+id/login_level_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ajker_deal_logo_iv"
+            tools:text="Login"
+            android:text="@string/login_level_text"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp" />
+
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/login_level_text"
+            android:hint="Your Email"
+            android:layout_marginTop="10dp" />
+
+        <EditText
+            android:id="@+id/passwordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailEt"
+            android:hint="Password" />
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/passwordEt"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="@string/login_btn_text"
+            android:backgroundTint="#DC3B30"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/signinBtnByGoogle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/loginBtn"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="@string/login_btn_by_google_text"
+            android:backgroundTint="#4E5DB3"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp"
+
+            />
+
+        <Button
+            android:id="@+id/signinBtnByFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/signinBtnByGoogle"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="@string/login_btn_by_facebook_text"
+            android:backgroundTint="#4E5DB3"
+            android:textAllCaps="false"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/errorMsgTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signinBtnByFacebook"
+            android:visibility="gone"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+        <TextView
+            android:id="@+id/forgot_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/errorMsgTV"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="@string/forgot_password_text"
+            android:textColor="#3F51B5"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/create_new_user_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/forgot_password_text"
+            android:text="@string/new_account_create_text"
+            android:textColor="#3F51B5"
+            android:textStyle="bold" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

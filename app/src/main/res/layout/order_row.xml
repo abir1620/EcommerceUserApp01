@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="order"
+            type="com.example.ecommerceuserapp01.models.Order" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentPadding="4dp"
+        android:layout_margin="4dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?selectableItemBackground">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/orderDateTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="24/05/2022 11:50 am"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                app:setDate="@{order.orderDate}"/>
+            <TextView
+                android:id="@+id/orderTotalTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="BDT 2000"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"
+                android:text="@{`BDT `+order.grandTotal}"/>
+            <TextView
+                android:layout_marginTop="3dp"
+                android:padding="2dp"
+                android:background="@color/purple_200"
+                android:id="@+id/orderStatusTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Order Status: Pending"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:layout_below="@id/orderDateTV"
+                android:text="@{`Order Status: `+order.orderStatus}"/>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>

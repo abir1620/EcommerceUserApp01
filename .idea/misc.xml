@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_add_box_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_add_circle_outline_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_add_shopping_cart_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_category_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_group_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_insert_chart_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_minimize_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_remove_shopping_cart_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_settings_applications_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_shopping_bag_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_baseline_supervised_user_circle_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/drawable/ic_round_check_circle_24.xml" value="0.2125" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/cart_item_row.xml" value="0.1" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/cart_item_sample_row.xml" value="0.33" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/drawer_header_layout.xml" value="0.25" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_cart_list.xml" value="0.9" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_checkout.xml" value="0.25" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_order_confirmation.xml" value="0.33" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_order_list.xml" value="0.1" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_order_successful_message.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_product_details.xml" value="0.1037037037037037" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_product_list.xml" value="0.25" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_registration.xml" value="0.1" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_user_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_user_profile.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/fragment_user_registration.xml" value="0.33" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/order_row.xml" value="0.33" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/layout/product_item.xml" value="0.1" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/menu/drawer_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/menu/main_menu.xml" value="0.1648148148148148" />
+        <entry key="..\:/Users/Abir/AndroidStudioProjects/EcommerceUserApp01/app/src/main/res/menu/product_menu.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
